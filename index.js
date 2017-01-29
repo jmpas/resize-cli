@@ -15,7 +15,7 @@ function writeFile(dest, fileName, suffix = '', buf) {
     fs.writeFile(
       path.resolve(dest, nameWithSuffix),
       buf,
-      err => err ? reject({msg: err, fileName: nameWithSuffix}) : resolve(nameWithSuffix))
+      err => err ? reject(err) : resolve(nameWithSuffix))
   })
 }
 
@@ -105,10 +105,10 @@ const promises = images
       const fileName = await data
       console.log(logSymbols.success, `Saving ${fileName}`)
     } catch (err) {
-      return console.log(logSymbols.error, `Saving ${fileName}`)
+      return console.log(logSymbols.error, err)
     }
   })
 
 Promise.all(promises)
   .then(() => console.log(logSymbols.success, 'All images were successfuly resized.'))
-  .catch((err) => console.log(logSymbols.warning, err))
+  .catch(err => console.log(logSymbols.warning, err))
