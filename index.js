@@ -1,3 +1,4 @@
+#!/usr/bin/env node --harmony
 import path from 'path'
 import fs from 'fs'
 import aspect from 'aspectratio'

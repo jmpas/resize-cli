@@ -2,10 +2,13 @@
   "name": "resize-cli",
   "version": "0.0.1",
   "description": "Terminal cleint for resizing images",
-  "main": "dist/index.js",
-  "repository": "https://github.com/nipher/resize-cli",
+  "main": "index.js",
+  "repository": "nipher/resize-cli",
   "author": "Nipher",
   "license": "MIT",
+  "bin": {
+    "resize": "./dist/index.js"
+  },
   "files": [
     "dist/index.js"
   ],

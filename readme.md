@@ -1,6 +1,9 @@
 # $ resize
+[![Build Status](https://travis-ci.org/Nipher/resize-cli.svg?branch=master)](https://travis-ci.org/Nipher/resize-cli)
 
 Terminal client to resize images keeping the aspect ratio
+
+`$ npm i -g resize-cli`
 
 ### Usage
 
