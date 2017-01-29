@@ -1,7 +1,7 @@
 {
   "name": "resize-cli",
   "version": "0.0.1",
-  "description": "Terminal cleint for resizing images",
+  "description": "Terminal client to resize images keeping the aspect ratio",
   "main": "index.js",
   "repository": "nipher/resize-cli",
   "author": "Nipher",
