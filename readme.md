@@ -21,3 +21,7 @@ Terminal client to resize images keeping the aspect ratio
 `$ resize ./images/* -w 450 -h 450`
 `$ resize ./images/* -w 450 -h 450 -o ./dist/images/`
 `$ resize ./images/* -w 450 -h 450 -o ./dist/images/ -s ".min"`
+
+### License
+
+MIT License
