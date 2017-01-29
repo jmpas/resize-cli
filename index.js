@@ -40,9 +40,9 @@ const cli = meow(`
     $ resize <input>
 
   Options
-    --suffix, -s Specifies a suffix for the new files
-    --max-width, -w Specifies the new width
-    --max-height, -h Specifies the new height
+    --suffix, -s Suffix for all new generated files
+    --max-width, -w Max width
+    --max-height, -h Max height
     --out-dest, -o Output destination path
 
   Examples
