@@ -4,6 +4,7 @@ import imageSize from 'image-size'
 import aspect from 'aspectratio'
 import {exec} from 'child_process'
 import del from  'del'
+import mkdir from 'mkdir-promise'
 
 function sizeOf(img) {
   return new Promise((resolve, reject) => {
@@ -24,6 +25,7 @@ function execCli(maxWidth, maxHeight, suffix) {
 }
 
 test.before(async t => {
+  await mkdir('./images/out')
   await execCli(140, 140)
   await execCli(140, 140, '_test')
 })

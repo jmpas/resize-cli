@@ -27,6 +27,7 @@
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-stage-3": "^6.22.0",
     "del": "^2.2.2",
+    "mkdir-promise": "^1.0.0",
     "xo": "^0.17.1"
   },
   "scripts": {
