@@ -31,9 +31,9 @@
     "xo": "^0.17.1"
   },
   "scripts": {
-    "build": "./node_modules/.bin/babel index.js --out-dir dist",
+    "build": "babel index.js --out-dir dist",
     "prepublish": "yarn build",
-    "lint": "./node_modules/.bin/xo --no-semicolon --space index.js",
-    "test": "yarn build && ava"
+    "lint": "xo --no-semicolon --space index.js",
+    "test": "yarn lint && yarn build && ava"
   }
 }
