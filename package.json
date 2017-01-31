@@ -1,6 +1,6 @@
 {
   "name": "resize-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Terminal client to resize images keeping the aspect ratio",
   "main": "index.js",
   "repository": "nipher/resize-cli",
@@ -11,6 +11,15 @@
   },
   "files": [
     "dist/index.js"
+  ],
+  "keywords": [
+    "png",
+    "jpg",
+    "jpeg",
+    "resize",
+    "image",
+    "cli",
+    "terminal"
   ],
   "dependencies": {
     "aspectratio": "^2.2.2",
