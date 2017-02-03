@@ -63,7 +63,7 @@ const promises = images
   })
 
 Promise.all(promises)
-  .then(() => console.log(logSymbols.success, 'All images were successfuly resized.'))
+  .then(() => console.log(logSymbols.success, 'All images were successfully resized.'))
   .catch(err => console.log(logSymbols.warning, err))
 
 function writeFile(dest, fileName, buf) {
